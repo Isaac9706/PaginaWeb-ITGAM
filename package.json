@@ -1,0 +1,20 @@
+{
+    "name": "paginaweb-itgam",
+    "version": "1.0.0",
+    "description": "Acosta Olvera Jose Eduardo\r Gutiérrez Guzmán Isaac Josué\r Leyva Ramirez Jose Eduardo\r Ortiz Vazquez Carlos Arturo",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Isaac9706/PaginaWeb-ITGAM.git"
+    },
+    "keywords": [],
+    "author": "Isaac Josue <isaacjosue97@outlook.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Isaac9706/PaginaWeb-ITGAM/issues"
+    },
+    "homepage": "https://github.com/Isaac9706/PaginaWeb-ITGAM#readme"
+}
