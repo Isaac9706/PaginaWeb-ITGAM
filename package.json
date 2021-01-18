@@ -4,7 +4,8 @@
     "description": "Acosta Olvera Jose Eduardo\r Gutiérrez Guzmán Isaac Josué\r Leyva Ramirez Jose Eduardo\r Ortiz Vazquez Carlos Arturo",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "webpack serve --config ./webpack.config.js --mode development"
     },
     "repository": {
         "type": "git",
@@ -16,5 +17,10 @@
     "bugs": {
         "url": "https://github.com/Isaac9706/PaginaWeb-ITGAM/issues"
     },
-    "homepage": "https://github.com/Isaac9706/PaginaWeb-ITGAM#readme"
+    "homepage": "https://github.com/Isaac9706/PaginaWeb-ITGAM#readme",
+    "devDependencies": {
+        "webpack": "^5.15.0",
+        "webpack-cli": "^4.3.1",
+        "webpack-dev-server": "^3.11.2"
+    }
 }
