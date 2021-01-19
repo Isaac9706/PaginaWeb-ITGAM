@@ -1,4 +1,6 @@
 import './styles/style.css';
+import 'materialize-css/dist/css/materialize.css';
+import 'materialize-css/dist/js/materialize';
 //Script de Frontend
 $(function() {
     $(window).scroll(function() {
