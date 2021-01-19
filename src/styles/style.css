@@ -1,3 +1,519 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
-    background: #25F;
+    background: #fff;
+    font-family: sans-serif;
+    font-size: calc(var(--font-size) * 1em);
+    padding-top: 250px;
+    transition: padding-top 0.5s ease;
+    margin: auto;
+    display: block;
+}
+
+
+/*Cabecera*/
+
+.menu_bar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+
+/*Estilos del gobierno*/
+
+.mn-gobierno {
+    position: relative;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    background: #0B231E;
+}
+
+.mn-gob-mx {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px 10px 10px 10px;
+}
+
+.mn-gob-mx:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mn-gob-bus {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px 5px 5px;
+}
+
+.mn-gob-bus:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mn-gob-tra {
+    float: right;
+    width: 80px;
+    height: 40px;
+    margin: 5px 10px 5px 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.mn-gob-tra:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.mn-gob-gob {
+    float: right;
+    width: 80px;
+    height: 40px;
+    color: #fff;
+    margin: 5px 25px 5px 5px;
+}
+
+.mn-gob-gob:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/*Estilos de la cabecera*/
+
+.img-cabecera {
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 100px;
+    margin: 10px -110px;
+}
+
+.resetLetra {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #1B396A;
+    margin: 15px 35px 5px 0;
+    cursor: pointer;
+}
+
+.reduceLetra {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #1B396A;
+    margin: 15px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.aumentaLetra {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #1B396A;
+    margin: 15px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.ln-cabecera {
+    float: right;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    margin: 15px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.calendario-cabecera {
+    float: right;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 15px 5px 5px 5px;
+}
+
+.correo-cabecera {
+    float: right;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 15px 5px 5px 5px;
+}
+
+
+/*Estilos del menu de la escuela*/
+
+.mn-escuela {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background: #023859;
+}
+
+.mn-escuela ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mn-escuela li {
+    line-height: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.mn-escuela li ul {
+    position: absolute;
+    width: 1000px;
+    line-height: 1rem;
+}
+
+.mn-escuela a {
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.mn-escuela a:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+
+/*Primer nivel*/
+
+.mn-escuela>ul {
+    background: #023859;
+    display: table;
+    width: 100%;
+}
+
+.mn-escuela>ul>li {
+    float: left;
+}
+
+
+/*Segundo nivel*/
+
+.mn-escuela li li {
+    background: #023859;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s;
+    width: 200px;
+}
+
+.mn-escuela li:hover>ul>li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+.mn-escuela>ul>li>ul {
+    top: 100%;
+}
+
+
+/*Tercer nivel*/
+
+.mn-escuela ul ul ul {
+    left: 100%;
+    top: 0;
+    width: 200px;
+}
+
+
+/*Contenido*/
+
+.contenido {
+    max-width: 90%;
+    margin: 0 auto;
+    position: static;
+}
+
+p {
+    margin-bottom: 2rem;
+    line-height: 2;
+    color: #7F8C8D;
+}
+
+section {
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/*Estilos para los Java Script*/
+
+.negativo {
+    filter: invert(100%);
+}
+
+.deshabiltar {
+    pointer-events: none;
+    opacity: .5
+}
+
+body.sticky-header {
+    padding-top: 100px;
+}
+
+body.sticky-header header {
+    height: 60px;
+    background: #2C3E50;
+}
+
+body.sticky-header header h1 {
+    transform: scale(0, 0);
+}
+
+
+/*Estilos para celulares*/
+
+
+/*Chico*/
+
+@media screen and (max-width:480px) {
+    .contenido {
+        width: 90%;
+        background: red;
+    }
+    header {
+        width: 100%;
+        height: 200px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .mn-gob-tra {
+        display: none !important;
+    }
+    .mn-gob-gob {
+        display: none !important;
+    }
+    /*Estilos de la cabecera*/
+    .img-cabecera {
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 50%;
+        margin: 0 5px 0 5px;
+    }
+    .resetLetra {
+        float: left;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 0;
+        cursor: pointer;
+    }
+    .reduceLetra {
+        float: left;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .aumentaLetra {
+        float: left;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .ln-cabecera {
+        float: left;
+        width: 12px;
+        height: 12px;
+        margin: 7px 2px 5px 5px;
+        cursor: pointer;
+    }
+    .calendario-cabecera {
+        float: left;
+        width: 25px;
+        height: 25px;
+        margin: 50px -80px 5px 5px;
+    }
+    .correo-cabecera {
+        float: left;
+        width: 25px;
+        height: 25px;
+        margin: 50px -50px 5px 5px;
+    }
+}
+
+
+/*Mediano*/
+
+@media screen and (min-width:481px) and (max-width:767px) {
+    .contenido {
+        width: 90%;
+        background: yellow;
+    }
+    header {
+        width: 100%;
+        height: 220px;
+    }
+    /*Estilos de la cabecera*/
+    .img-cabecera {
+        position: relative;
+        float: left;
+        width: 80%;
+        height: 80%;
+        margin: 10px -110px;
+    }
+    .resetLetra {
+        float: right;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 0;
+        cursor: pointer;
+    }
+    .reduceLetra {
+        float: right;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .aumentaLetra {
+        float: right;
+        width: 15px;
+        height: 15px;
+        font-size: 15px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .ln-cabecera {
+        float: right;
+        width: 12px;
+        height: 12px;
+        margin: 7px 2px 5px 5px;
+        cursor: pointer;
+    }
+    .calendario-cabecera {
+        float: right;
+        width: 25px;
+        height: 25px;
+        margin: 50px -80px 5px 5px;
+    }
+    .correo-cabecera {
+        float: right;
+        width: 25px;
+        height: 25px;
+        margin: 50px -50px 5px 5px;
+    }
+}
+
+
+/*Grande*/
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body {
+        padding-top: 200px;
+        background: green;
+    }
+    .contenido {
+        width: 80%;
+        background: green;
+    }
+    header {
+        width: 100%;
+        height: 220px;
+    }
+    /*Estilos de la cabecera*/
+    .img-cabecera {
+        position: relative;
+        float: left;
+        width: 500px;
+        height: 100px;
+        margin: 10px -110px;
+    }
+    .resetLetra {
+        float: right;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #1B396A;
+        margin: 15px 10px 5px 0;
+        cursor: pointer;
+    }
+    .reduceLetra {
+        float: right;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .aumentaLetra {
+        float: right;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        color: #1B396A;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .ln-cabecera {
+        float: right;
+        width: 20px;
+        height: 20px;
+        font-size: 15px;
+        margin: 15px 5px 5px 5px;
+        cursor: pointer;
+    }
+    .calendario-cabecera {
+        float: right;
+        width: 35px;
+        height: 35px;
+        margin: 15px 5px 5px 5px;
+    }
+    .correo-cabecera {
+        float: right;
+        width: 35px;
+        height: 35px;
+        margin: 15px 5px 5px 5px;
+    }
 }
