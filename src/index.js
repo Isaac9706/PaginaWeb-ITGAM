@@ -1,6 +1,20 @@
 import './styles/style.css';
 import 'materialize-css/dist/css/materialize.css';
-import 'materialize-css/dist/js/materialize';
+import dropdown from './helpers/dropdown';
+
+dropdown.init();
+
+/*Menú desplegable*/
+(function($) {
+    $(function() {
+
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+
+    }); // end of document ready
+
+})(jQuery); // end of jQuery name space
+
 //Script de Frontend
 $(function() {
     $(window).scroll(function() {
@@ -10,8 +24,8 @@ $(function() {
         } else {
             $("body").removeClass("sticky-header");
         }
-    })
-})
+    });
+});
 
 /* Aumentar el tamaño de la letra */
 $(".aumentaLetra").on('click', function(event) {
