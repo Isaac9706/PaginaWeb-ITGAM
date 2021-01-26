@@ -85,3 +85,7 @@ $(".resetLetra").click(function() {
 $(".ln-cabecera").on('click', function(event) {
     $("html").toggleClass("negativo");
 });
+/* Funcion menu colapsable */
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
