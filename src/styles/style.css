@@ -433,13 +433,17 @@ body.sticky-header header h1 {
     }
     
     .card-title{
-        padding: 5px;
+        padding: 1px;
     }
     .card-content{
         text-align: center;
-        padding: 0px !important;
+        padding: 7px !important;
     }
 
     .card{
         transition: .5s;
+    }
+
+    .card:hover{
+        transform: scale(1.1);
     }

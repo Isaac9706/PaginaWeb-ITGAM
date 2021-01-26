@@ -89,3 +89,7 @@ $(".ln-cabecera").on('click', function(event) {
 $(document).ready(function(){
     $('.collapsible').collapsible();
   });
+  /* Funcion Zoom en Imagen */
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
