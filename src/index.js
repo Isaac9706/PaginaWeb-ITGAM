@@ -1,4 +1,5 @@
 import './styles/style.css';
+import './styles/stylesocial.css';
 import 'materialize-css/dist/css/materialize.css';
 import dropdown from './helpers/dropdown';
 
