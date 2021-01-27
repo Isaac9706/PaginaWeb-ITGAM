@@ -86,10 +86,10 @@ $(".ln-cabecera").on('click', function(event) {
     $("html").toggleClass("negativo");
 });
 /* Funcion menu colapsable */
-$(document).ready(function(){
+$(document).ready(function() {
     $('.collapsible').collapsible();
-  });
-  /* Funcion Zoom en Imagen */
-  $(document).ready(function(){
+});
+/* Funcion Zoom en Imagen */
+$(document).ready(function() {
     $('.materialboxed').materialbox();
-  });
+});

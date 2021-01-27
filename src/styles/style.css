@@ -5,9 +5,6 @@ img {
 body {
     background: #fff;
     font-family: sans-serif;
-    font-size: calc(var(--font-size) * 1em);
-    padding-top: 250px;
-    transition: padding-top 0.5s ease;
     margin: auto;
     display: block;
 }
@@ -17,13 +14,12 @@ body {
 
 header {
     width: 100%;
-    height: 250px;
+    height: 190px;
     background: #fff;
     text-align: center;
-    position: fixed;
+    position: relative;
     top: 0;
     overflow: hidden;
-    transition: all 0.5s ease;
 }
 
 
@@ -155,13 +151,17 @@ header {
 /*Estilos del menu de la escuela*/
 
 .mn-escuela {
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    line-height: 60px;
-    width: 100%;
-    background: #023859;
+    background: #1B396A;
     text-align: left;
+}
+
+.brand-logo {
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.menu-cn {
+    margin-right: 40px;
 }
 
 
@@ -198,19 +198,6 @@ section {
     opacity: .5
 }
 
-body.sticky-header {
-    padding-top: 100px;
-}
-
-body.sticky-header header {
-    height: 60px;
-    background: #2C3E50;
-}
-
-body.sticky-header header h1 {
-    transform: scale(0, 0);
-}
-
 
 /*Estilos para celulares*/
 
@@ -223,7 +210,7 @@ body.sticky-header header h1 {
     }
     header {
         width: 100%;
-        height: 200px;
+        height: 170px;
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -300,7 +287,7 @@ body.sticky-header header h1 {
     }
     header {
         width: 100%;
-        height: 220px;
+        height: 170px;
     }
     /*Estilos de la cabecera*/
     .img-cabecera {
@@ -362,15 +349,12 @@ body.sticky-header header h1 {
 /*Grande*/
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-    body {
-        padding-top: 200px;
-    }
     .contenido {
         width: 80%;
     }
     header {
         width: 100%;
-        height: 220px;
+        height: 190px;
     }
     /*Estilos de la cabecera*/
     .img-cabecera {
@@ -428,22 +412,24 @@ body.sticky-header header h1 {
         margin: 15px 5px 5px 5px;
     }
 }
-    .container{
-        margin-top: 100px;
-    }
-    
-    .card-title{
-        padding: 1px;
-    }
-    .card-content{
-        text-align: center;
-        padding: 7px !important;
-    }
 
-    .card{
-        transition: .5s;
-    }
+.container {
+    margin-top: 100px;
+}
 
-    .card:hover{
-        transform: scale(1.1);
-    }
+.card-title {
+    padding: 1px;
+}
+
+.card-content {
+    text-align: center;
+    padding: 7px !important;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
